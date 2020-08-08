@@ -243,3 +243,9 @@ CREATE TABLE IF NOT EXISTS `SubsInfo` (
   UNIQUE KEY `SubID` (`SubID`,`Key`),
   KEY `Key` (`Key`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+CREATE TABLE IF NOT EXISTS `StoreUpdateQueue` (
+  `ID` int(4) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `Type` varchar(50) CHARACTER SET ascii COLLATE ascii_bin NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
